@@ -11,6 +11,8 @@ import flixel.FlxSprite;
 import flixel.graphics.frames.FlxAtlasFrames;
 import flixel.math.FlxMath;
 import flixel.util.FlxColor;
+import PlayState.modchartoption;
+import PlayState.scrollType;
 import PlayState;
 
 using StringTools;
