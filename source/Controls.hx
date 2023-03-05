@@ -288,7 +288,6 @@ abstract Action(String) to String from String
 	var T10_R = "t10-release";
 	var T11_R = "t11-release";
 }
-#end
 
 enum Device
 {
@@ -1554,7 +1553,6 @@ class Controls extends FlxActionSet
 		}
 
 		forEachBound(control, function(action, state) addKeys(action, keys, state));
-		#end
 	}
 
 	/**
@@ -1569,7 +1567,6 @@ class Controls extends FlxActionSet
 		}
 
 		forEachBound(control, function(action, _) removeKeys(action, keys));
-		#end
 	}
 
 	inline static function addKeys(action:FlxActionDigital, keys:Array<FlxKey>, state:FlxInputState)
@@ -1952,7 +1949,6 @@ class Controls extends FlxActionSet
 
 		for (control in buttonMap.keys())
 			bindButtons(control, id, buttonMap[control]);
-		#end
 	}
 
 	inline function addGamepadLiteral(id:Int, ?buttonMap:Map<Control, Array<FlxGamepadInputID>>):Void
@@ -1961,7 +1957,6 @@ class Controls extends FlxActionSet
 
 		for (control in buttonMap.keys())
 			bindButtons(control, id, buttonMap[control]);
-		#end
 	}
 
 	public function removeGamepad(deviceID:Int = FlxInputDeviceID.ALL):Void
@@ -2019,7 +2014,6 @@ class Controls extends FlxActionSet
 	public function bindButtons(control:Control, id, buttons)
 	{
 		forEachBound(control, function(action, state) addButtons(action, buttons, state, id));
-		#end
 	}
 
 	/**
@@ -2029,7 +2023,6 @@ class Controls extends FlxActionSet
 	public function unbindButtons(control:Control, gamepadID:Int, buttons)
 	{
 		forEachBound(control, function(action, _) removeButtons(action, gamepadID, buttons));
-		#end
 	}
 
 	inline static function addButtons(action:FlxActionDigital, buttons:Array<FlxGamepadInputID>, state, id)
