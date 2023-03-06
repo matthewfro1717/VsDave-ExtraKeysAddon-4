@@ -1184,7 +1184,6 @@ class Controls extends FlxActionSet
 			scheme = None;
 		setKeyboardScheme(scheme, false);
 	}
-	#end
 
 	override function update()
 	{
