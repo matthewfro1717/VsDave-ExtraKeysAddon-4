@@ -1494,7 +1494,6 @@ class Controls extends FlxActionSet
 				byName[name].add(cast input);
 			}
 		}
-		#end
 
 		switch (device)
 		{
