@@ -1038,7 +1038,6 @@ class Controls extends FlxActionSet
 
 		setKeyboardScheme(scheme, false);
 	}
-	#else
 	public function new(name, scheme:KeyboardScheme = null)
 	{
 		super(name);
