@@ -506,7 +506,6 @@ class Controls extends FlxActionSet
 	var _t11R = new FlxActionDigital(Action.T11_R);
 
 	var byName:Map<String, FlxActionDigital> = new Map<String, FlxActionDigital>();
-	#end
 
 	public var gamepadsAdded:Array<Int> = [];
 	public var keyboardScheme = KeyboardScheme.None;
